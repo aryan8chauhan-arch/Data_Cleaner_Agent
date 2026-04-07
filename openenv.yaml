@@ -1,0 +1,24 @@
+name: "data-cleaner-pro"
+version: "1.0.0"
+description: "A real-world agent environment for cleaning messy Pandas DataFrames."
+
+entrypoint: "env:DataCleaningEnv"
+
+tags:
+  - openenv
+  - data-science
+  - automated-cleaning
+
+tasks:
+  - id: "remove_duplicates"
+    difficulty: "easy"
+  - id: "drop_empty_columns"
+    difficulty: "easy"
+  - id: "handle_missing_values"
+    difficulty: "medium"
+  - id: "standardize_currency"
+    difficulty: "medium"
+  - id: "format_consistency"
+    difficulty: "hard"
+  - id: "gdpr_pii_redaction"
+    difficulty: "hard"

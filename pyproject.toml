@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-cleaner-agent"
+version = "1.0.0"
+description = "Data Cleaner Agent for OpenEnv"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "pandas",
+    "pydantic",
+    "python-dotenv",
+    "openenv-core",
+    "fastapi",
+    "uvicorn"
+]
+<<<<<<< HEAD
+=======
+[project.scripts]
+server = "server.app:run"
+>>>>>>> f70e6cf (Fixing the structure to meet correct openenv requirements)
