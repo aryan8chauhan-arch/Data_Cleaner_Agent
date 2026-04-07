@@ -17,8 +17,5 @@ dependencies = [
     "fastapi",
     "uvicorn"
 ]
-<<<<<<< HEAD
-=======
 [project.scripts]
-server = "server.app:run"
->>>>>>> f70e6cf (Fixing the structure to meet correct openenv requirements)
+server = "server.app:main"

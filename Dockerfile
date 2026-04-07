@@ -13,9 +13,4 @@ COPY --chown=user . .
 
 EXPOSE 7860
 
-<<<<<<< HEAD
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
-=======
-# Command to start the FastAPI server
 CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860"]
->>>>>>> f70e6cf (Fixing the structure to meet correct openenv requirements)
