@@ -111,13 +111,20 @@ def main():
             
             if done:
                 break
-        
+        '''
         if done and raw_reward >= 1.0:
             score = 1.0
         else:
             score = sum(rewards) / float(env.max_steps)
             score = min(max(score, 0.0), 1.0)
-            
+        '''
+
+        if done and raw_reward >= 1.0:
+            score = 0.999
+        else:
+            score = sum(rewards) / float(env.max_steps)
+            score = min(max(score, 0.001), 0.999)
+
         success = score >= SUCCESS_SCORE_THRESHOLD
         
         log_end(success=success, steps=steps_taken, score=score, rewards=rewards)
